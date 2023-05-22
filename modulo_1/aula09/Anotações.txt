@@ -1,0 +1,21 @@
+SELECIONANDO
+
+
+(por MARCA):
+getElementsByTagName()
+
+(por ID):
+getElementsById()
+
+(por NOME):
+getElementsByName()
+
+(por CLASSE):
+getElementsByClassName()
+
+(por SELECTOR)
+querySelector()
+querySelectorAll()
+
+Para classe = .
+Para id = #
