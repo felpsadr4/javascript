@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Nacional</title>
+</head>
+<body>
+    <header>
+        <h1>Estrangeiro ou Brasileiro</h1>
+    </header>
+    <main>
+        <div class="Quest">
+            <p>Pais que você nasceu:</p>
+            <input type="text" id="txtn">
+            <input type="button" value="Verificar" onclick="verificar()">
+        </div>
+        <div id="res">
+
+        </div>
+    </main>
+    <script>
+        function verificar() {
+            var nac = document.querySelector('input#txtn')
+            var res = document.querySelector('div#res')
+            if (nac.value === '') {
+                res.innerHTML += 'Digite um país VÁLIDO'
+            } else{
+                res.innerHTML = `Seu pais de origem é ${nac.value}!<br>`
+                if (nac.value == 'Brasil') {
+                    res.innerHTML += 'Aqui no Brasil você é considerado <strong>BRASILEIRO</strong>!'
+                } else {
+                    res.innerHTML += 'Aqui no Brasil você é considerado <strong>ESTRANGEIRO</strong>!'
+                }
+            }
+        
+        }
+        
+    </script>
+</body>
+</html>
